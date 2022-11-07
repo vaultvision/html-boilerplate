@@ -1,0 +1,108 @@
+{{#> base }}
+    {{> AppSidebar/sidebar works=this }}
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+            {{> AppMain/vv-page-title }}
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-3 widget-content ">
+                        <div class="widget-content-wrapper ">
+                            Get the most out of this tour from your laptop or desktop, 
+                            <button type="button" id="testref" class="btn-shadow p-1 px-2 mx-2 btn btn-info">
+                              Email this to me.
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header-tab card-header">
+                            <div class="card-header-title">
+                                <i class="header-icon lnr-rocket icon-gradient bg-tempting-azure"> </i>
+                                How it Works
+                            </div>
+                            <div class="btn-actions-pane-right">
+                                <div class="nav">
+                                    <a href="javascript:void(0);" class="border-0 btn-pill btn-wide btn-transition active btn btn-outline-alternate">Tab 1</a>
+                                    <a href="javascript:void(0);" class="ms-1 btn-pill btn-wide border-0 btn-transition  btn btn-outline-alternate second-tab-toggle-alt">Tab 2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="tab-eg-55">
+                                    <div style="position:relative">
+                                        <div id="reference" style="position:absolute; background-color:red; top:75%; left: 75%"></div>
+                                        <div id="tooltip" style="position:absolute;">tooltip</div>
+                                  <img src="/assets/images/how-signin-works.svg" class="img-fluid"/>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="card mb-3 widget-content bg-midnight-bloom">
+                        <div class="widget-content-wrapper text-white">
+                            <div class="widget-content-left">
+                                <div class="widget-heading">Total Orders</div>
+                                <div class="widget-subheading">Last year expenses nothusoa snhoeu </div>
+                            </div>
+                            <div class="widget-content-right">
+                                <button type="button" class="btn-shadow p-2 px-4 btn btn-primary me-3 btn-login">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card mb-3 widget-content bg-arielle-smile">
+                        <div class="widget-content-wrapper text-white">
+                            <div class="widget-content-left">
+                                <div class="widget-heading">Clients</div>
+                                <div class="widget-subheading">Total Clients Profit</div>
+                            </div>
+                            <div class="widget-content-right">
+                              <button type="button" class="btn-shadow p-2 btn btn-light btn-signup">
+                                  Create Account
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="card mb-3 widget-content bg-grow-early">
+                        <div class="widget-content-wrapper text-white">
+                            <div class="widget-content-left">
+                                <div class="widget-heading">Followers</div>
+                                <div class="widget-subheading">People Interested</div>
+                            </div>
+                            <div class="widget-content-right">
+                              <button type="button" class="btn-shadow p-2 btn btn-secondary btn-logout">
+                                  Logout
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+
+
+            </div>
+
+        </div>
+        {{> AppFooter/footer }}
+    </div>
+{{/ base }}

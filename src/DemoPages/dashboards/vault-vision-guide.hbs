@@ -1,0 +1,112 @@
+{{#> base }}
+    {{> AppSidebar/sidebar guide=this }}
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+            {{> AppMain/vv-page-title }}
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-3 widget-content ">
+                        <div class="widget-content-wrapper ">
+                            Get the most out of this tour from your laptop or desktop, 
+                            <button type="button" class="btn-shadow p-1 px-2 mx-2 btn btn-info">
+                              Email this to me.
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header-tab card-header">
+                            <div class="card-header-title">
+                                <i class="header-icon lnr-rocket icon-gradient bg-tempting-azure"> </i>
+                                Integration Guide
+                            </div>
+                            <div class="btn-actions-pane-right">
+                                <div class="nav">
+                                    <a href="javascript:void(0);" class="border-0 btn-pill btn-wide btn-transition active btn btn-outline-alternate">Tab 1</a>
+                                    <a href="javascript:void(0);" class="ms-1 btn-pill btn-wide border-0 btn-transition  btn btn-outline-alternate second-tab-toggle-alt">Tab 2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="tab-eg-55">
+                              <div class="p-2">
+                                <pre>
+                                    # Step 1
+
+                                    Run the standard setup and install for the theme
+
+
+                                    pre-requisites
+                                     - install git [official git setup guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+                                     - install npm [official npm setup guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+                                    ```
+                                    git clone git@github.com:DashboardPack/architectui-html-theme-free.git
+
+                                    cd architectui-html-theme-free
+
+                                    npm install
+
+                                    npm run start
+
+                                    -or-
+
+                                    npm run build
+                                    ```
+
+                                    This will yield a working and running or built instance of the 'out of the box' static application.
+
+                                    Exciting to see something running!!! Now let's add the auth with our Vault Vision platform ->
+
+                                    # Step 2
+
+                                    remove the spinning animation on the right side bar, it uses 3% cpu constantly.  No need for that
+
+                                    ```
+
+                                    --- a/src/layout/ThemeOptions/theme-options.hbs
+                                    +++ b/src/layout/ThemeOptions/theme-options.hbs
+                                    @@ -1,6 +1,6 @@
+                                     <div class="ui-theme-settings">
+                                         <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
+                                    -        <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+                                    +        <i class="fa fa-cog fa-w-16 fa-2x"></i>
+                                         </button>
+                                         <div class="theme-settings__inner">
+                                             <div class="scrollbar-container">
+                                    ```
+
+                                    # Step 3
+
+                                    Review the `webpack.config.js` to see what packages and plugins are used.  Notice that there is a maps plugin, which is probably Google Maps which will make some outbound calls.  We don't want that because we want something self-contained as possible.  So let's remove the map feature.
+
+                                    - Search and remove things with `map` that are relevant to the map component and not just normal function calls like `map-keys` or `map-get`, want to key those.
+
+                                    # Step 4
+
+                                    Install the javascript oidc-client
+
+                                    ```
+                                    npm install oidc-client --save
+                                    ```
+
+                                    create the src\scripts-init\oidc.js file that `import { UserManager, Log } from 'oidc-client';` and add src\scripts-init\oidc.js to the `webpack.config.js`
+                                    
+                                </pre>
+                              </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        {{> AppFooter/footer }}
+    </div>
+{{/ base }}

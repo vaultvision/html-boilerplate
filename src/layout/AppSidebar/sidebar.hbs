@@ -1,0 +1,38 @@
+<div class="app-sidebar sidebar-shadow authed d-none">
+    {{> ../AppHeader/Components/logo }}
+    <div class="scrollbar-sidebar">
+        <div class="app-sidebar__inner">
+            <ul class="vertical-nav-menu">
+                <li class="app-sidebar__heading">Menu</li>
+                <li>
+                    <a href="index.html"{{#if index}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-safe"></i>
+                        Vault Vision Sandbox
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vaultvision.com?mtm_campaign=chameleon&mtm_source=chameleon&mtm_cid=2992871366697057732">
+                        <i class="metismenu-icon pe-7s-safe"></i>
+                        Vault Vision Home Page
+                    </a>
+                </li>
+                <li>
+                    <a href="guide.html"{{#if guide}} class="mm-active"{{/if}}>
+                        <i class="metismenu-icon pe-7s-safe"></i>
+                        Vault Vision Discord
+                    </a>
+                </li>
+
+
+                <li class="app-sidebar__heading manage">Vault Vision <br/>Professional Plan</li>
+                <li>
+                    <a href="https://manage.vaultvision.com/billing" class="manageLink" target="manage" data-thref="https://manage.vaultvision.com/billing">
+                        <i class="metismenu-icon pe-7s-graph2">
+                        </i>
+                        Professional Plan Upgrade
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

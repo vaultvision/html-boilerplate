@@ -1,0 +1,29 @@
+  .vv-open-options {
+    @include border-radius(50px);
+    position: absolute;
+    left: -114px;
+    top: 180px;
+    padding: 0;
+    height: 80px;
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: block;
+    box-shadow: $box-shadow-default;
+    //margin-top: -35px;
+    background-color: #F8A602; /* #EEF1F6; */
+    border-color: #F8A602;
+
+    svg {
+      top: 16.25%; /* (button-height - svg height / 2 ) / button-height */
+      left: 12.5%;
+      position: absolute;
+      margin: -0.5em 0 0 0em;
+    }
+  }
+
+  .app-header__logo .logo-text{
+    font-family: 'Permanent Marker';
+    font-size: 2em;
+    vertical-align: center;
+  }

@@ -1,0 +1,264 @@
+{{#> base }}
+    {{> AppSidebar/sidebar index=this }}
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+            {{> AppMain/vv-page-title }}
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <div class="card mb-3  bg-happy-green">
+
+                        <div class="card-header">
+                          <div class="card-header-title">
+                            Take Vault Vision for a test drive in this interactive development sandbox
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-white fs-3 p-1">The development sandbox is made up of 2 components</div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center flex-wrap">
+                            
+                            <div class="border border-secondary border-1 rounded bg-white p-2 flex-grow-0 ">
+                                
+                                <div class="px-1 fs-3">This Sandbox</div>
+                                <h5 class="px-1">(where you are now)</h5>
+                                <h4 class="p-1">
+                                  <code class="text-dark text-nowrap fs-6">https://<span class="devdash">dev-123456</span>.vv<span class="text-primary">app</span>.io</code>
+                                </h4>
+                            </div> 
+                            <div class="m-2 text-nowrap text-white p-2 d-none d-md-block flex-grow-0 text-center">
+                                <div>Login/Logout</div>
+                                <i class="fas fa-long-arrow-left"></i>&nbsp;
+                                <i class="fas fa-long-arrow-right"></i>
+                                <div>Signup/Reset</div>
+                            </div>
+                            <div class="border border-secondary border-1 rounded bg-white p-2 flex-grow-0 ">
+                                
+                                <div class="px-1 fs-3">Auth Provider</div>
+                                <h5 class="px-1">(by Vault Vision)</h5>
+                                <h4 class="p-1">
+                                  <code class="text-dark text-nowrap fs-6">https://<span class="devdash">dev-123456</span>.vv<span class="text-primary">key</span>.io</code>
+                                </h4>
+                            </div>
+                            
+                          </div> 
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="text-white">
+                              (production instances use your domains)
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+            <div class="row unauthed d-none">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Signup
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>Explore signing up new user accounts below, try types of credentials like passwords and OAuth social identities.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm btn-signup">
+                            Create Account
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row unauthed d-none">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Login
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>Explore different logins below, use different accounts and different methods like: password, passkey(NEW), and social identies like Google or Microsoft.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm btn-login">
+                            Login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row authed d-none">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Logout
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>Logout to switch between acccounts and to see the differences between the view of a logged in user vs a logged out user.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm btn-logout">
+                            Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row authed d-none">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                User Settings
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>On your settings page you can update your name, email and password. You can also
+                            add more login options like passkeys, FIDO token, and multiple social identities.  Multiple credential types can be tied to a single account.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm authorityLink" data-authhref="authority/settings">
+                            See User Settings
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-none manage">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Custom Logo
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>Customize your login and signup screens with your own logo for more brand awareness. Once uploaded, it will show up here and on your login pages.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm manageLink" data-thref="https://manage.vaultvision.com/tenants/$1/settings#logo-anchor">
+                            Upload a Logo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-none manage">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                User Management
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>See all your users, create new users, delete or block problem users, or help reset a credential for a user that has lost their's.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm manageLink" data-thref="https://manage.vaultvision.com/tenants/$1/users">
+                            See User List
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-none manage">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Dashboard
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>See daily metrics like counts of new user signups, number of successful logins and failed logins.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm manageLink" data-thref="https://manage.vaultvision.com/tenants/$1/dashboard">
+                            See Dashboard
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-none manage">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Create a 2nd application
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>Add another application that your existing users can access, maybe a new mobile app or website. Our platform makes it easy to add multiple  applications for a single user base.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm manageLink" data-thref="https://manage.vaultvision.com/tenants/$1/applications">
+                            Add 2nd Application
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>     
+
+            <div class="row d-none manage">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Create a new tenant on your branded domain
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>Create a new tenant with a new user store.  Organize different sets of users into their separate tenants. This feature allows you to maintain separate sets of users for different applications.</h5>
+                            <button type="button" class="btn-shadow p-1 px-2 btn btn-info btn-sm manageLink" data-thref="https://manage.vaultvision.com/start">
+                            Create New Tenant
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>            
+
+            <div class="row unauthed d-none">
+
+                <div class="col-md-12">
+                    <div class="mb-3 card">
+                        <div class="card-header">
+                            <div class="card-header-title">
+                                Share this sandbox with a co-worker or manager
+                            </div>
+                        </div>
+                         <div class="card-body">
+                            <h5>This sandbox is available for anyone you want to share with, use the URL below to share with others. Very useful to help show what integrating with the Vault Vision platform would be like.  They can create users and perform logins on this sandbox as if it were your real application.</h5>
+                            <div class="p-1 px-2">
+                              <code class="text-dark text-nowrap fs-6">https://<span class="devdash">dev-123456</span>.vvapp.io</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>    
+
+        </div>
+        {{> AppFooter/footer }}
+    </div>
+{{/ base }}
